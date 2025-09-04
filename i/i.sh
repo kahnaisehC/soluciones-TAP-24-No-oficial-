@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "??"
 
 g++ testi.cpp -o testi
 g++ i.cpp -o i 
@@ -23,7 +22,7 @@ for (( i = 0; i < 65536; i+=1)) do
 		cat gen >> genout
 		cat out >> genout
 		isbad=$(./icheck < genout)
-		if [ "$isbad" != "" ]; then
+ 		if [ "$isbad" != "" ]; then
 			echo $isbad
 			echo $i
 			echo "gen:" 
